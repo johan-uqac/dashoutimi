@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import App0 from './App0';
 import App1 from './App1';
 import App2 from './App2';
 import App3 from './App3';
@@ -13,6 +14,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<App0/>}/>
         <Route path="/*" element={<App1/>}/>
         <Route path="/1" element={<App1/>}/>
         <Route path="/2" element={<App2/>}/>
