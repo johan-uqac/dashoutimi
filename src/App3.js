@@ -14,8 +14,11 @@ function App() {
 
   return (
     <div className="quarter-grid-container">
-      <div className="grid-item">3</div>
-      <div>{listItem}</div>
+      <div className="grid-item">
+      <ul>
+        {listItem}
+        </ul>
+      </div>
     </div>
   );
 }
