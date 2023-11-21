@@ -1,11 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import CarouselActivities from './CarouselActivities/CarouselActivities';
 
 function App() {
   return (
-    <div>
-      <div>2</div>
-    </div>
+    <CarouselActivities />
   );
 }
 
