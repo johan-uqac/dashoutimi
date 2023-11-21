@@ -10,10 +10,10 @@ const WeatherApp = () => {
 
   return (
     <div className={"quarter-grid-container"}>
-      <div className={"grid-item"} onClick={() => {window.location.href = "/1"}}><App1/></div>
-      <div className={"grid-item"} onClick={() => {window.location.href = "/2"}}><App2/></div>
-      <div className={"grid-item"} onClick={() => {window.location.href = "/3"}}><App3/></div>
-      <div className={"grid-item"} onClick={() => {window.location.href = "/4"}}><App4/></div>
+      <div className={"grid-item"} onClick={() => { window.location.href = "/#/1" }}><App1 /></div>
+      <div className={"grid-item"} onClick={() => { window.location.href = "/#/2" }}><App2 /></div>
+      <div className={"grid-item"} onClick={() => { window.location.href = "/#/3" }}><App3 /></div>
+      <div className={"grid-item"} onClick={() => { window.location.href = "/#/4" }}><App4 /></div>
     </div>
   );
 };

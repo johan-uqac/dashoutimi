@@ -7,23 +7,19 @@ import App2 from './App2';
 import App3 from './App3';
 import App4 from './App4';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App0 />} />
-        <Route path="/*" element={<App1 />} />
-        <Route path="/1" element={<App1 />} />
-        <Route path="/2" element={<App2 />} />
-        <Route path="/3" element={<App3 />} />
-        <Route path="/4" element={<App4 />} />
-
-      </Routes>
-    </BrowserRouter>
-  </React.StrictMode>
+  <HashRouter>
+    <Routes>
+      <Route path="/" element={<App0 />} />
+      <Route path="/1" element={<App1 />} />
+      <Route path="/2" element={<App2 />} />
+      <Route path="/3" element={<App3 />} />
+      <Route path="/4" element={<App4 />} />
+    </Routes>
+  </HashRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
