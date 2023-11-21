@@ -7,6 +7,6 @@
 
 .grid-item {
   border: 1px solid black;
-  padding: 20px;
   text-align: center;
+  max-height: calc(100vh / 2);
 }
