@@ -3,8 +3,8 @@ import './App.css';
 
 function App4() {
   return (
-    <div className="quarter-grid-container">
-      <div className="grid-item">4</div>
+    <div>
+      <div>4</div>
     </div>
   );
 }

@@ -4,21 +4,30 @@ import data from './data.json'
 function App() {
   const listItem = data.map(info => {
       return (
-        <li>
-          <p>{info.date}</p>
+        <div style={{
+          backgroundColor: "#9AB057",
+          alignItems: 'center',
+          justifyContent: 'center',
+          textAlign: 'center',
+          borderRadius: 20,
+          margin: 20,
+          padding: 5
+        }}>
+          <b>{info.date + ' ' +info.hour}</b>
           <p>{info.description}</p>
-          <p>{info.hour}</p>
-        </li>
+          <p>{info.location}</p>
+        </div>
       )
   })
 
   return (
-    <div className="quarter-grid-container">
-      <div className="grid-item">
-      <ul>
-        {listItem}
-        </ul>
-      </div>
+    <div style={{
+      backgroundImage: './heures-ouvertures.jpg',
+      width: '100%',
+      height: '100%',
+      overflow: 'scroll'
+    }}>
+      {listItem}
     </div>
   );
 }
